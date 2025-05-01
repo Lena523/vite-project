@@ -5,6 +5,7 @@ import './App.css';
 
 const App = () => {
   const [count, setCount] = useState(0);
+  console.log('Hello, world!');
   return (
     <>
       <div>
