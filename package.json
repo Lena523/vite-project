@@ -12,8 +12,9 @@
     "format": "prettier --write ."
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,html,css, scss}": "prettier --write"
-  },
+    "*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"],
+    "*.{md,html,css,scss,json}": ["prettier --write"]
+  }, 
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
