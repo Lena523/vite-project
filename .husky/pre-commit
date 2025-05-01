@@ -1,3 +1,1 @@
- #!/usr/bn/env sh
-"$(import.meta.dirname -- "$0")/ _/husky.sh"
 npx lint-staged
